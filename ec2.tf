@@ -8,7 +8,7 @@ resource "aws_instance" "webserver" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "Web Server 1"
+    Name = "Web Server"
   }
 }
 
@@ -23,6 +23,6 @@ resource "aws_instance" "webserver2" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "DB Server 2"
+    Name = "DB Server"
   }
 }
