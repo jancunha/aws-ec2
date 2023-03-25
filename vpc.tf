@@ -1,5 +1,5 @@
 resource "aws_security_group" "sec-group" {
-  name        = "demosg"
+  name        = "sec-group"
   description = "Open ports"
   vpc_id      = var.vpc_id
 
@@ -12,6 +12,7 @@ resource "aws_security_group" "sec-group" {
   }
 
   egress {
+    description = "Internet Access"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
