@@ -1,3 +1,3 @@
 # aws-ec2
 
-Creating one EC2 on AWS
+Creating one EC2 Ubuntu on AWS
