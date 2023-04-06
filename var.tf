@@ -25,5 +25,5 @@ variable "instance_count" {
 }
 
 variable "key_name" {
-  default = "chavessh"
+  default = "ssh-key"
 }
