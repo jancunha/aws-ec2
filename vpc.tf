@@ -1,6 +1,6 @@
-resource "aws_security_group" "sec-group" {
-  name        = "sec-group"
-  description = "Open ports"
+resource "aws_security_group" "allow_ssh" {
+  name        = "allow_ssh"
+  description = "Allow SSH inbound traffic"
   vpc_id      = var.vpc_id
 
   ingress {
@@ -20,6 +20,6 @@ resource "aws_security_group" "sec-group" {
   }
 
   tags = {
-    Name = "sec-group"
+    Name = "allow_ssh"
   }
 }
