@@ -3,11 +3,11 @@ variable "aws_region" {
 }
 
 variable "vpc_id" {
-    default = "vpc-08404e8bfdd9a4ba9"
+  default = "vpc-08404e8bfdd9a4ba9"
 }
 
 variable "subnet_id" {
-    default = "subnet-07738ebbf170bd7d5"
+  default = "subnet-07738ebbf170bd7d5"
 }
 
 variable "instance_type" {
@@ -16,8 +16,8 @@ variable "instance_type" {
 
 variable "instance_count" {
   description = "number of instances"
-  type = number
-    default = 1
+  type        = number
+  default     = 1
 }
 
 variable "key_name" {
